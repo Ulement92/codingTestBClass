@@ -1,10 +1,20 @@
+replace 보기 전에 replaceAll 이란?
+
+```js
+const str = 'js is very hard';
+str.replaceAll('hard', 'easy');
+//"js is very easy"
+```
+
 <details>
 <summary>replace</summary>
 <div markdown="1">
   
   ### 특정 문자 제거하기
   
-  ```str.replace('AB', '');```
+  ```js
+  str.replace('AB', '');
+  ```
 
   str 문자열에서 'AB' 부분을 찾아서 ''로 반환하는 형식.
 
@@ -12,7 +22,9 @@
   
   ### 특정 문자 모두 제거하기
   
-  ```str.replace(/AB/g, '');```
+  ```js
+  str.replace(/AB/g, '');
+  ```
   
   '/'는 정규식의 시작과 끝을 나타낸다.
   
@@ -20,7 +32,9 @@
   
   ### 특정 문자 대소문자 구분없이 모두 제거하기
   
-  ```str.replace(/AB/ig, '');```
+  ```js
+  str.replace(/AB/ig, '');
+  ```
   
   'i'는 ignore case를 의미하며, 대소문자를 구분하지 않는다.
   
